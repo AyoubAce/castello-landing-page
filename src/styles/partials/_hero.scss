@@ -1,0 +1,132 @@
+.hero {
+  position: relative;
+  // width: 100vw;
+  //  height: 90vh;
+  color: $primary;
+  overflow-x: hidden;
+  padding:2rem 0 7rem;
+  .shadow{
+    position: absolute;
+    height:100%;
+    width: 100%;
+    left:0;
+    bottom: 0;
+    z-index: -1;
+    background:linear-gradient(to top, $dark-700 ,transparent,transparent, transparent,$dark-400)
+  }
+}
+.video-player {
+  video {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    // mix-blend-mode: hard-light;
+    // mix-blend-mode: luminosity;
+    // mix-blend-mode: darken;
+  }
+}
+.hero-container {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  padding:2rem 0;
+  border-radius: 15px;
+
+}
+.hero-content {
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+
+  .logo {
+    img {
+      display: block;
+      max-height: 200px;
+      width: 200px;
+      padding: 0 2rem;
+    }
+  }
+  .title-description {
+    margin: 3rem 0 6rem;
+    h1 {
+      font-size: clamp(2.5rem, 7vw, 5.5rem);
+      font-family: $Gilda;
+      text-align: center;
+
+    }
+  }
+  .reserve-order {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    .btn{
+      text-align: center;
+      padding: 0.5rem 2rem;
+      background-color: $secondary;
+      background-color: darken($secondary,10%);
+      color: $primary;
+      border: none;
+      outline: none;
+      border-radius: 6px;
+
+      box-shadow: -1px 1px 10px 0px darken($primary,80%);
+      transition: all 400ms ease-out;
+      &:hover{
+        background-color: $primary;
+        color: $dark-400;
+        transform: scale(0.9);
+      }
+    }
+  }
+  .location-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    // width: 100%;
+    gap: 1rem;
+    margin-top: 2rem;
+    .icon {
+       font-size: 1.2rem;
+       margin-right:0.5rem;
+    }
+    .info {
+     display: flex;
+     justify-content: center;
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-container {
+    .reserve-order {
+      width: 70%;
+      gap: 2rem;
+    }
+    .location-info {
+      flex-direction: row;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .hero-container {
+    .hero-content {
+      
+      .reserve-order {
+        width: 80%;
+        gap: 4rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,160 @@
+.menu{
+    background-color: $primary;
+    padding: 3rem 0 5rem;
+    color:$dark-700;
+    position: relative;
+    .menu-header{
+        width: 90%;
+        margin: 0 auto;
+       
+        p{
+            margin:1rem 0;
+        }
+    }
+    .go-to-order{
+        width: 100%;
+        position: -webkit-sticky;
+        position: sticky;
+        left: 0;
+        bottom: 0;
+        z-index: 10;
+        background-color: $dark-400;
+        color:$primary;
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:2rem;
+        .basket-icon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .icon{
+                font-size: 1.5rem;
+            }
+            p{
+                background-color: $secondary;
+                border-radius: 50%;
+                padding: 0.1rem 0.5rem;
+                color:$primary;
+                margin-left: -0.4rem;
+            }
+        }
+    }
+    .go-to-order:hover{
+        background-color: darken($primary,20%);
+        color:$dark-700;
+    }
+}
+.menu-container{
+    width: 90%;
+    margin:0 auto;
+    display: grid;
+}
+.menu-item{
+    padding:0 0 1rem;
+    margin:1rem 0;
+    .menu-item-header{
+        // background-size: cover;
+        // background-repeat: no-repeat;
+        // background-position: center;
+        padding:2rem 0rem 0;
+        background-color: rgba($dark-700,1);
+        color:$primary;    
+    }
+    h3{
+        letter-spacing: 0.5px;
+        line-height:1.5;
+        color: $primary;  
+        background-color: $primary;
+        color:$dark-700;
+        display: inline-block;
+        padding:0.25rem 1rem;
+        border:1px solid $primary;
+        border-radius:0 6px 0 0 ;
+        font-size: 1.1rem;
+    }
+    .description{
+        padding: 0.25rem;
+    } 
+}
+.dish{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba($dark-700,0.1);
+    margin: 1rem;
+    padding: 0.5rem 0;
+    .dish-title{ 
+        font-weight: 600;
+    }
+    .dish-description{
+        color:lighten($dark-400,10%);
+    }
+    .dish-price{
+        color:$dark-400;
+    }
+    p{
+        max-width: 300px;
+        margin-bottom: 0.75rem;
+    }
+    .price-basket{
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;  
+        
+        .basket{
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .menu-container{
+        width: 90%;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+      .menu{
+     
+      }
+    .menu-container{
+        column-gap:2rem;
+        grid-template-columns: 1fr 1fr;
+    
+
+        .vorspeisen{
+            grid-column: 1 /2;
+            grid-row: 1 /2;
+        }
+        .salate{
+            grid-column: 1 /2;
+            grid-row: 2 /3;
+        }
+        .wraps{
+            grid-column: 1 /2;
+            grid-row: 3 /4;
+        }
+        .pasta{
+            grid-column: 1 /2;
+            grid-row: 4 /6;
+        }
+        .dessert{
+            grid-column: 1 /2;
+            grid-row: 6 /7;
+        }
+       
+        .pizza{
+            grid-column: 2 / 3;
+            grid-row: 1 /4;
+        }
+        .pizzabrotchen{
+            grid-column: 2 / 3;
+            grid-row:4 / 5;
+        }
+        .fisch{
+            grid-column: 2 / 3;
+            grid-row: 5 /6;
+        }
+    }
+  }

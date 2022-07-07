@@ -1,0 +1,59 @@
+.order-page{
+    background-color: $primary;
+    color:$dark-700;
+    padding:3rem 0 6rem;
+}
+.order-container{
+    width: 90%;
+    margin:0 auto;
+    &> div{
+        margin: 2rem 0;
+    }
+    h4{
+        margin:2rem 0 0.5rem;
+        span{
+            color:$secondary;
+        }
+    }
+    .icon{
+        font-size: 1.5rem;
+    }
+    .order-fallback{
+        background-image: url("/src/food.png");
+        padding:5rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        p{
+            padding:0.5rem 1rem;
+            margin:2rem;
+        }
+    }
+    .btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:1rem;
+        padding: 0.5rem 1rem;
+        width: 10rem;
+        background-color: $dark-400;
+        color:$primary;
+        margin: 1rem 0;
+        &:hover{
+            background-color: $primary;
+            color:$dark-400;
+            border:1px solid $dark-400
+        }
+    }
+    .total-price{
+        display: flex;
+        justify-content: flex-end;
+        font-weight: 600;
+        p{
+            padding:0.5rem 1rem;
+            border:1px solid rgba($dark-400,0.3);
+        }
+    }
+}

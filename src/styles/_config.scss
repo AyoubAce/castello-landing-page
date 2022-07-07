@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&family=Merriweather:wght@300;400&family=Montserrat+Subrayada:wght@700&family=Montserrat:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Sawarabi+Mincho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
+//fonts
+$Merriweather: 'Merriweather', serif;
+$Montserrat: 'Montserrat', sans-serif;
+$Lobster: 'Lobster Two', serif;
+$Dancing: 'Dancing Script', cursive, sans-serif;
+$Gilda: 'Gilda Display', serif;
+
+//colors:
+$dark-700:#303841;
+$dark-400:#3A4750;
+$secondary:#D72323;
+$primary:#EEEEEE;
+
+@mixin css3-prefix($prop, $value) {
+    -webkit-#{$prop}: #{$value};
+    -moz-#{$prop}: #{$value};
+    -ms-#{$prop}: #{$value};
+    -o-#{$prop}: #{$value};
+    #{$prop}: #{$value};
+ }
+//  div {
+//     @include css3-prefix(transform, scale3d(2.5, 2, 1.5));
+//  }

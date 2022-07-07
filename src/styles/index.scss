@@ -1,0 +1,70 @@
+@import './config';
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+
+body{
+    font-family: $Montserrat, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+     background-color: $primary;
+}
+.home{
+  padding-bottom: 4rem;
+  // background-color: $dark-700;
+}
+h1,h2,h3{
+  font-family: $Gilda;
+}
+
+.loading{
+  position: relative;
+  height:70vh;
+  background-color: $primary;
+  color:$dark-700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .icon{
+    margin:2rem 0;
+    color:darken($primary,60%);
+    animation: loading-animate 350ms ease-out infinite;
+  }
+@keyframes loading-animate {
+  0%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+}
+
+
+
+
+@import "./partials/intro";
+@import "./partials/navbar";
+@import "./partials/hero";
+@import "./partials/delivery";
+@import "./partials/featured";
+@import "./partials/cateringService";
+@import "./partials/menuPage";
+@import "./partials/order";
+@import "./partials/booking";
+@import "./partials/forms";
+@import "./partials/galerie";
+@import "./partials/contact";
+@import "./partials/footer";
