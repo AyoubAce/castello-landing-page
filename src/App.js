@@ -27,7 +27,7 @@ function App() {
     }
   });
   // A fake PROMISE() to show an animated logo when the page loads.
-  const [stare,setStare]=useState(true)
+ /* const [stare,setStare]=useState(true)
   useEffect(() => {
     fakePromiseCall().then(() => {
       setStare(false);
@@ -40,7 +40,7 @@ function App() {
   if(stare){
 
    return <Intro stare={stare}/>
-  }
+  }*/
   return (
     
     <div className="App">
