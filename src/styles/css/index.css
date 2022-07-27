@@ -593,7 +593,7 @@ p {
   margin: 0 auto;
   -o-object-fit: cover;
      object-fit: cover;
-  max-width: 250px;
+  max-width: 270px;
 }
 .events-section .img img {
   width: 100%;
@@ -604,6 +604,7 @@ p {
   .events-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 1rem;
   }
   .events-container .event-title h2 {
