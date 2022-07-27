@@ -593,7 +593,7 @@ p {
   margin: 0 auto;
   -o-object-fit: cover;
      object-fit: cover;
-  max-width: 250px;
+  max-width: 280px;
 }
 .events-section .img img {
   width: 100%;
@@ -609,6 +609,9 @@ p {
   .events-container .event-title h2 {
     text-align: unset;
   }
+  .events-section .img {
+  max-width: 300px;
+}
 }
 .menu {
   background-color: #EEEEEE;
