@@ -1,5 +1,4 @@
 import React from "react";
-import houseimg from "../"
 
 function CateringService() {
   return (
