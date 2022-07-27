@@ -27,6 +27,9 @@ body{
 h1,h2,h3{
   font-family: $Gilda;
 }
+p{
+  line-height: 1.5rem;
+}
 
 .loading{
   position: relative;

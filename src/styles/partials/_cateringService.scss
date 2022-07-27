@@ -1,58 +1,50 @@
-.events-section {
+.events-section{
   background-color: $dark-700;
-  padding: 2rem 0 4rem;
-  position: relative;
-  z-index: 20;
- 
-  box-shadow: 0 5px $dark-700, 0 -5px $dark-700; 
-  .events-container {
-    // border-bottom: 2px solid $secondary;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-
-    .events-inner-container {
-      width: 100%;
-      background-color: rgba($dark-700, 0.7);
-      padding: 0rem 0 1rem;
-    }
-    h2 {
-      margin: 0 0 2rem;
-      padding:1rem;
-      background-color: $primary;
-      color: $dark-700;
-      text-align: center;
-    }
-    p {
-      color: darken($primary, 5%);
+    padding: 0rem 0rem 3rem;
+    z-index: 20;
+    box-shadow: 0 10px $dark-700, 0 -10px $dark-700; 
+    position: relative;
+    .events-container{
+      width: 90%;
+      margin:0 auto;
       color: $primary;
-      padding: 1rem 2rem;
     }
-  }
+    .event-title{
+      h2{
+         margin:2rem 0 1rem;
+         text-align: center;
+       } 
+      p{
+        padding:0 1rem;
+        text-shadow: -1px 1px 2px $dark-700;
+        color:darken($primary,10%);
+        
+        
+      }
+    }
+    .img{
+      margin:0 auto;
+       object-fit: cover;
+      max-width: 250px;
+      img{
+        width: 100%;
+        border-radius: 50%;
+      }
+   
+    }
+
 }
 @media (min-width: 768px) {
   .events-container {
-    width: 90%;
-    margin: 0 auto;
-    box-shadow: -1px 1px 10px 0px darken($primary,80%);
-    border-radius: 6px;
-    .events-inner-container {
-      border-radius: 6px;
-    }
-    h2 {
-       border-radius: 6px 6px 0 0;
-    }
-    p {
-      width: 80%;
-      padding:2rem 0;
-    }
-  }
-}
+    display: flex;
+    justify-content: center;
+    gap:1rem;
+    .event-title{
 
-@media (min-width: 1024px) {
-  .events-container {
-    p {
-      width: 60%;
+      h2 {
+         text-align: unset;
+      }
     }
+
   }
 }
